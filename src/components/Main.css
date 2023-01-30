@@ -1,0 +1,30 @@
+main {
+
+}
+
+p {
+    color: #8a6a96;
+}
+
+.name {
+    color: limegreen;
+}
+
+.hero-break {
+    border-color: limegreen;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.5); 
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.5);
+}
+
+.btn-blue {
+    @apply  text-white;
+    background-color: #8a6a96;
+}
+
+.btn-blue:hover {
+    background-color: #5d4068;
+}

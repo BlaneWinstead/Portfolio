@@ -1,0 +1,27 @@
+header {
+    background-color: #7415bb;
+    position: sticky;
+}
+
+nav {
+    -webkit-box-shadow: 0px 8px 14px -3px rgba(0,0,0,0.66); 
+    box-shadow: 0px 8px 14px -3px rgba(0,0,0,0.66);
+}
+
+.icon:hover, li:hover {
+    color: #32cd32;
+    cursor: pointer;
+}
+
+li:hover {
+    border: 1px solid #32cd32;
+    border-radius: 10%;
+}
+
+svg {
+    height: 60%;
+}
+
+svg:hover > g {
+    fill: #32cd32;
+}
