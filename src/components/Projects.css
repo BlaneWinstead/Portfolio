@@ -1,8 +1,11 @@
+.projects {
+  min-height: 100vh;
+}
 
 .project-card {
-    background-color: rgba(56, 41, 68, 0.5);
+  background-color: rgba(56, 41, 68, 0.5);
 }
 
 .project-card:hover {
-    background-color: rgba(98, 58, 129, 0.8);
+  background-color: rgba(98, 58, 129, 0.8);
 }

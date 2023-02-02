@@ -1,27 +1,112 @@
 header {
-    background-color: #7415bb;
-    position: sticky;
+  background-color: #7415bb;
+  position: sticky;
 }
 
 nav {
-    -webkit-box-shadow: 0px 8px 14px -3px rgba(0,0,0,0.66); 
-    box-shadow: 0px 8px 14px -3px rgba(0,0,0,0.66);
+  -webkit-box-shadow: 0px 8px 14px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 8px 14px -3px rgba(0, 0, 0, 0.66);
 }
 
-.icon:hover, li:hover {
-    color: #32cd32;
-    cursor: pointer;
+.icon:hover,
+li:hover {
+  color: #32cd32;
+  cursor: pointer;
 }
 
 li:hover {
-    border: 1px solid #32cd32;
-    border-radius: 10%;
+  border: 1px solid #32cd32;
+  border-radius: 10%;
 }
 
 svg {
-    height: 60%;
+  height: 60%;
+}
+
+svg:hover {
+  fill: #32cd32;
 }
 
 svg:hover > g {
-    fill: #32cd32;
+  fill: #32cd32;
+}
+
+.menu-container {
+  height: 25px;
+  width: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menulogo {
+  height: 3px;
+  width: 30px;
+  background-color: snow;
+  border-radius: 0.5rem;
+  z-index: -10;
+}
+
+.menu {
+  background-color: #32cd32;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  transition: 0.5s;
+  position: absolute;
+  top: 56px;
+  z-index: 10;
+}
+
+.showMenu {
+  display: inherit;
+  touch-action: none;
+}
+
+.hideMenu {
+  display: none;
+}
+
+.menu li {
+  border-bottom: 1px solid rgb(121, 233, 121);
+  padding: 30px 0;
+  text-align: center;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li:first-child a {
+  font-weight: bold;
+}
+
+.menu li a {
+  color: snow;
+  font-size: 20px;
+  transition: font-weight 0.2s;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 500px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 16px;
+  }
 }
