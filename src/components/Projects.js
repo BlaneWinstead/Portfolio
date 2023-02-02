@@ -31,26 +31,26 @@ function Projects() {
   });
 
   return (
-    <div id="projects" className="projects flex flex-col justify-center">
-      <h2 className="self-center text-white text-4xl font-bold my-5">
+    <div id="projects" className="projects flex flex-col justify-center mt-40">
+      <h2 className="self-center text-white text-2xl md:text-4xl font-bold my-5">
         Projects
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 lg:p-4">
+      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pt-0 lg:p-4">
         <a
           href="#"
           class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-5xl"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={rat}
             alt=""
           />
           <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Dorglandia - Creator
             </h5>
-            <p class="pb-5 font-normal text-gray-100 dark:text-gray-400">
+            <p class="text-sm md:text-base pb-5 font-normal text-gray-100 dark:text-gray-400">
               Dorglandia is an idle persistent browser game where players take
               on the role of a character battling various enemies to gain
               experience and level up. The game is designed to be played idly,
@@ -79,15 +79,15 @@ function Projects() {
           class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={example}
             alt=""
           />
           <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
-            <p class="pb-10 font-normal text-gray-700 dark:text-gray-400">
+            <p class="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis cupiditate consectetur sequi reprehenderit labore
               fugiat impedit at esse adipisci, unde tempore voluptatibus in id
@@ -106,14 +106,14 @@ function Projects() {
           </div>
         </a>
         <form
-          className="flex flex-col justify-center px-5 md:max-w-3xl"
+          className="flex flex-col justify-center px-10 md:max-w-3xl"
           action=""
         >
           <button
             type="submit"
             formAction="https://www.google.com"
             formTarget="_blank"
-            className="btn btn-blue w-full "
+            className="font-bold py-1 rounded text-sm md:btn btn-blue "
           >
             View Project Code <FontAwesomeIcon icon={faGithub} />
           </button>
@@ -139,7 +139,7 @@ function Projects() {
           class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
             <p class="pb-10 font-normal text-gray-700 dark:text-gray-400">
@@ -167,21 +167,21 @@ function Projects() {
         </a>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 lg:p-0">
+      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pb-14 lg:p-0">
         <a
           href="#"
           class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={example}
             alt=""
           />
           <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
-            <p class="pb-10 font-normal text-gray-700 dark:text-gray-400">
+            <p class="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis cupiditate consectetur sequi reprehenderit labore
               fugiat impedit at esse adipisci, unde tempore voluptatibus in id

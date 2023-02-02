@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
       <Toaster />
       <Navbar />
       <div className="bg-container">

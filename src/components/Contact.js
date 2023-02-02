@@ -41,9 +41,9 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="contact flex flex-col justify-center p-2 md:p-16"
+      className="contact flex flex-col justify-center p-2 md:p-16 mt-10"
     >
-      <h2 className="self-center text-white font-semibold text-3xl mb-10">
+      <h2 className="text-xl md:text-2xl self-center text-white font-semibold mb-10">
         Send me a message
       </h2>
       <div className="flex flex-row">
