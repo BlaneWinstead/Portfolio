@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  max-height: 10vh;
 }
 
 .layered-waves {
@@ -18,5 +19,9 @@
 @media screen and (min-width: 800px) {
     .layered-waves {
       height: 200px;
+    }
+
+    .footer {
+      max-height: 20vh;
     }
 }

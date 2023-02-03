@@ -39,18 +39,18 @@ function Projects() {
       <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pt-0 lg:p-4">
         <a
           href="#"
-          class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-5xl"
+          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-5xl"
         >
           <img
-            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={rat}
             alt=""
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Dorglandia - Creator
             </h5>
-            <p class="text-sm md:text-base pb-5 font-normal text-gray-100 dark:text-gray-400">
+            <p className="text-sm md:text-base pb-5 font-normal text-gray-100 dark:text-gray-400">
               Dorglandia is an idle persistent browser game where players take
               on the role of a character battling various enemies to gain
               experience and level up. The game is designed to be played idly,
@@ -76,18 +76,18 @@ function Projects() {
       <div className="flex lg:hidden flex-col lg:flex-row justify-center anim-hidden-right p-8 lg:p-4">
         <a
           href="#"
-          class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
+          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={example}
             alt=""
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
-            <p class="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
+            <p className="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis cupiditate consectetur sequi reprehenderit labore
               fugiat impedit at esse adipisci, unde tempore voluptatibus in id
@@ -106,14 +106,13 @@ function Projects() {
           </div>
         </a>
         <form
-          className="flex flex-col justify-center px-10 md:max-w-3xl"
-          action=""
+          className="flex flex-col justify-center px-20 md:max-w-3xl"
         >
           <button
             type="submit"
             formAction="https://www.google.com"
             formTarget="_blank"
-            className="font-bold py-1 rounded text-sm md:btn btn-blue "
+            className="font-bold py-1 md:py-2 rounded text-sm btn-blue "
           >
             View Project Code <FontAwesomeIcon icon={faGithub} />
           </button>
@@ -122,8 +121,7 @@ function Projects() {
 
       <div className="hidden lg:flex flex-col lg:flex-row justify-center anim-hidden-right p-8 lg:p-4">
         <form
-          className="flex flex-col justify-center px-5 md:max-w-3xl"
-          action=""
+          className="flex flex-col justify-center px-20 md:max-w-3xl"
         >
           <button
             type="submit"
@@ -136,19 +134,19 @@ function Projects() {
         </form>
         <a
           href="#"
-          class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
+          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
-            <p class="pb-10 font-normal text-gray-700 dark:text-gray-400">
+            <p className="pb-10 font-normal text-gray-700 dark:text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis cupiditate consectetur sequi reprehenderit labore
               fugiat impedit at esse adipisci, unde tempore voluptatibus in id
               obcaecati vero ab, dignissimos dolorum? Enim!
             </p>
-            <form className="flex flex-col justify-center" action="">
+            <form className="flex flex-col justify-center">
               <button
                 type="submit"
                 formAction="https://www.google.com"
@@ -160,7 +158,7 @@ function Projects() {
             </form>
           </div>
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={example}
             alt=""
           />
@@ -170,24 +168,24 @@ function Projects() {
       <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pb-14 lg:p-0">
         <a
           href="#"
-          class="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
+          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            class="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
             src={example}
             alt=""
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Portfolio Project
             </h5>
-            <p class="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
+            <p className="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis cupiditate consectetur sequi reprehenderit labore
               fugiat impedit at esse adipisci, unde tempore voluptatibus in id
               obcaecati vero ab, dignissimos dolorum? Enim!
             </p>
-            <form className="flex flex-col justify-center" action="">
+            <form className="flex flex-col justify-center">
               <button
                 type="submit"
                 formAction="https://www.google.com"
@@ -200,14 +198,14 @@ function Projects() {
           </div>
         </a>
         <form
-          className="flex flex-col justify-center px-5 md:max-w-3xl"
+          className="flex flex-col justify-center px-20 md:max-w-3xl"
           action=""
         >
           <button
             type="submit"
             formAction="https://www.google.com"
             formTarget="_blank"
-            className="btn btn-blue w-full"
+            className="font-bold py-1 md:py-2 lg:text-base lg:px-4 rounded text-sm btn-blue"
           >
             View Project Code <FontAwesomeIcon icon={faGithub} />
           </button>

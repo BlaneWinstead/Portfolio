@@ -6,7 +6,6 @@ import "./Contact.css";
 import toast from "react-hot-toast";
 
 import envelope from "../images/envelope.png";
-import { faTowerBroadcast } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
   const form = useRef();
@@ -103,7 +102,7 @@ export const Contact = () => {
             </label>
 
             <button
-              className="btn btn-blue mt-5 w-3/4 md:w-1/2 m-auto"
+              className="font-bold py-1 rounded text-sm md:py-2 md:text-base btn-blue mt-5 w-3/4 md:w-1/2 m-auto"
               type="submit"
             >
               Send Message

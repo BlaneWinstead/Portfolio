@@ -34,9 +34,9 @@ function Main() {
             <form className="flex justify-center">
               <button
                 type="submit"
-                formaction="https://drive.google.com/file/d/1_OzF9PZ4O3iZnPphj3jii3uWHgK7Z6mE/view?usp=sharing"
-                formtarget="_blank"
-                className="font-bold py-1 px-2 rounded text-sm md:btn btn-blue mt-4 md:mt-8 lg:mt-20"
+                formAction="https://drive.google.com/file/d/1_OzF9PZ4O3iZnPphj3jii3uWHgK7Z6mE/view?usp=sharing"
+                formTarget="_blank"
+                className="font-bold py-1 px-2 md:py-2 md:px-4 rounded text-sm md:text-base btn-blue mt-4 md:mt-8 lg:mt-20"
               >
                 View Resume
               </button>

@@ -13,7 +13,7 @@ import {
 function Footer() {
   return (
     <div className="relative">
-      <div className="footer w-full layered-waves flex flex-col justify-end">
+      <div className="footer layered-waves flex flex-col justify-end">
         <div className="flex justify-between md:mt-5">
           <small className="w-1/2 text-xs ml-2 md:ml-5 md:mb-2">
             &copy; Copyright 2023, Blane Winstead. All Rights Reserved.

@@ -33,7 +33,7 @@ function Navbar() {
               data-v-423bf9ae=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 477 90"
-              class="iconLeft"
+              className="iconLeft"
             >
               <g
                 data-v-423bf9ae=""
