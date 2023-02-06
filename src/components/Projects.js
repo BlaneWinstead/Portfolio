@@ -32,7 +32,7 @@ function Projects() {
 
   return (
     <div id="projects" className="projects flex flex-col justify-center mt-40">
-      <h2 className="self-center text-white text-2xl md:text-4xl font-bold my-5">
+      <h2 className="self-center anim-hidden-left text-white text-2xl md:text-4xl font-bold my-5">
         Projects
       </h2>
 

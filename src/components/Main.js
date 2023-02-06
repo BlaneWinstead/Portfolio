@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.css";
 import portrait from "../images/ai-portrait3.jpg";
 import portraitLg from "../images/ai-portrait4.jpg";
@@ -7,20 +7,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 function Main() {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(
+      ".anim-hidden,  .anim-hidden-left, .anim-hidden-right"
+    );
+    hiddenElements.forEach((el) => observer.observe(el));
+  });
+
   return (
     <div className="main flex flex-col justify-center mt-6">
       <section className="flex justify-center items-center p-4 md:p-8 xl:pt-20">
         <div className="flex max-w-lg">
-          <div className="md:mt-10 text-center xl:text-left">
-            <h3 className="font-sans text-xl md:text-2xl text-white font-semibold">
+          <div className="anim-hidden-left md:mt-10 text-center xl:text-left">
+            <h3 className="anim-hidden-left font-sans text-xl md:text-2xl text-white font-semibold">
               Software Engineer
             </h3>
-            <h1 className="font-sans name text-4xl md:text-6xl font-bold mb-2 md:mb-10">
+            <h1 className="anim-hidden-left font-sans name text-4xl md:text-6xl font-bold mb-2 md:mb-10">
               Blane Winstead
             </h1>
             <div className="hero-break border border-b w-1/5 xl:mb-5 mx-auto xl:ml-0"></div>
             <div className="xl:hidden p-6">
-              <img className="max-h-48 md:max-h-80 mx-auto" src={portrait}></img>
+              <img className="max-h-48 md:max-h-80 mx-auto" src={portrait} alt="AI generated portrait of Blane"></img>
             </div>
             <p className="font-sans font-semibold text-xs md:text-md px-3 leading-6 md:text-lg md:leading-9 md:p-0">
               Hello, my name is Blane Winstead and I am a full stack software
@@ -44,7 +62,7 @@ function Main() {
           </div>
         </div>
         <div className="p-12 w-1/3 my-auto hidden xl:block">
-          <img src={portraitLg} className=""></img>
+          <img src={portraitLg} className="anim-hidden-right" alt="AI generated portrait of Blane"></img>
         </div>
       </section>
       <div className="hidden lg:flex justify-center mt-5 xl:mt-16">
