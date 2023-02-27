@@ -44,39 +44,23 @@ export const Contact = () => {
     }
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
-
-    const hiddenElements = document.querySelectorAll(
-      ".anim-hidden,  .anim-hidden-left, .anim-hidden-right"
-    );
-    hiddenElements.forEach((el) => observer.observe(el));
-  });
 
   return (
     <div
       id="contact"
-      className="contact flex flex-col justify-center p-2 md:p-16 mt-10"
+      className="contact flex flex-col p-2 md:p-4 xl:pr-10 md:pb-12 xl:pb-32 2xl:pb-60"
     >
-      <h2 className="anim-hidden-left text-2xl md:text-4xl self-center text-white font-semibold mb-10">
+      <h3 className="text-2xl md:text-3xl self-center text-white font-semibold mb-10">
         Send me a message
-      </h2>
+      </h3>
       <div className="flex flex-row">
-        <div className="flex relative flex-col xl:flex-row justify-center items-center">
-          <div className="flex flex-col justify-center w-2/3 md:w-full z-10 md:p-8">
-            <img src={envelope} alt="" className="anim-hidden-left footer-img w-2/3 m-auto" />
+        <div className="flex relative flex-col xl:flex-row items-center">
+          <div className="flex flex-col w-2/3 md:w-full z-10 md:p-8">
+            <img src={envelope} alt="" className="footer-img w-2/3 m-auto" />
           </div>
           <form
             id="contact-form"
-            className="anim-hidden-right flex flex-col justify-center p-4 md:p-10 md:mb-20 mt-10 w-full"
+            className="flex flex-col justify-center p-4 md:p-10 md:mb-20 mt-10 w-full"
             ref={form}
             onSubmit={sendEmail}
           >

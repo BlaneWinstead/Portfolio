@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 
 import "./Projects.css";
 
-import example from "../images/project_example.png";
+import heartHealth from "../images/heart_app.jpg";
+import waterTracker from "../images/water_tracker.jpg";
 import rat from "../images/AngryDorgishRat.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,26 +32,26 @@ function Projects() {
   });
 
   return (
-    <div id="projects" className="projects flex flex-col justify-center mt-40">
-      <h2 className="self-center anim-hidden-left text-white text-2xl md:text-4xl font-bold my-5">
+    <div id="projects" className="projects flex flex-col justify-center py-10">
+      <h2 className="self-center anim-hidden-left text-white text-2xl md:text-4xl font-bold pb-10">
         Projects
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pt-0 lg:p-4">
+      <div className="flex flex-col lg:flex-row anim-hidden-left p-8 pt-0 lg:pl-20">
         <a
           href="#"
           className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-5xl"
         >
           <img
-            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full h-48 md:h-auto md:w-60 lg:rounded-l-lg"
             src={rat}
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-white">
               Dorglandia - Creator
             </h5>
-            <p className="text-sm md:text-base pb-5 font-normal text-gray-100 dark:text-gray-400">
+            <p className="text-sm md:text-base pb-5 font-normal text-gray-300">
               Dorglandia is an idle persistent browser game where players take
               on the role of a character battling various enemies to gain
               experience and level up. The game is designed to be played idly,
@@ -79,19 +80,16 @@ function Projects() {
           className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
-            src={example}
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full h-48 md:h-auto md:w-60"
+            src={heartHealth}
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Portfolio Project
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-white">
+              Heart Health App
             </h5>
-            <p className="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis cupiditate consectetur sequi reprehenderit labore
-              fugiat impedit at esse adipisci, unde tempore voluptatibus in id
-              obcaecati vero ab, dignissimos dolorum? Enim!
+            <p className="text-sm md:text-base pb-10 font-normal text-gray-300">
+            A machine learning-based web app that predicts the likelihood of a heart attack based on user inputs like age, gender, cholesterol, and blood pressure. Developed with Python, Flask, and scikit-learn, it can help users take proactive steps to prevent heart disease.
             </p>
             <form className="flex flex-col justify-center" action="">
               <button
@@ -106,7 +104,7 @@ function Projects() {
           </div>
         </a>
         <form
-          className="flex flex-col justify-center px-20 md:max-w-3xl"
+          className="flex flex-col justify-center md:max-w-3xl"
         >
           <button
             type="submit"
@@ -119,9 +117,37 @@ function Projects() {
         </form>
       </div>
 
-      <div className="hidden lg:flex flex-col lg:flex-row justify-center anim-hidden-right p-8 lg:p-4">
+      <div className="hidden lg:flex flex-col lg:flex-row justify-end anim-hidden-right p-8 lg:pr-20">
+        <a
+          href="#"
+          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
+        >
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="text-2xl font-bold tracking-tight text-white">
+              Heart Health App
+            </h5>
+            <p className="pb-10 font-normal text-gray-300">
+            A machine learning-based web app that predicts the likelihood of a heart attack based on user inputs like age, gender, cholesterol, and blood pressure. Developed with Python, Flask, and scikit-learn, it can help users take proactive steps to prevent heart disease.
+            </p>
+            <form className="flex flex-col justify-center">
+              <button
+                type="submit"
+                formAction="https://www.google.com"
+                formTarget="_blank"
+                className="text-white font-semibold"
+              >
+                View Project Demo <FontAwesomeIcon icon={faUpRightFromSquare} />
+              </button>
+            </form>
+          </div>
+          <img
+            className="object-cover w-full h-96 md:h-auto md:w-60 rounded-r-lg"
+            src={heartHealth}
+            alt=""
+          />
+        </a>
         <form
-          className="flex flex-col justify-center px-20 md:max-w-3xl"
+          className="flex flex-col justify-center px-10 md:max-w-3xl"
         >
           <button
             type="submit"
@@ -132,58 +158,24 @@ function Projects() {
             View Project Code <FontAwesomeIcon icon={faGithub} />
           </button>
         </form>
-        <a
-          href="#"
-          className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
-        >
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Portfolio Project
-            </h5>
-            <p className="pb-10 font-normal text-gray-700 dark:text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis cupiditate consectetur sequi reprehenderit labore
-              fugiat impedit at esse adipisci, unde tempore voluptatibus in id
-              obcaecati vero ab, dignissimos dolorum? Enim!
-            </p>
-            <form className="flex flex-col justify-center">
-              <button
-                type="submit"
-                formAction="https://www.google.com"
-                formTarget="_blank"
-                className="text-white font-semibold"
-              >
-                View Project Demo <FontAwesomeIcon icon={faUpRightFromSquare} />
-              </button>
-            </form>
-          </div>
-          <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
-            src={example}
-            alt=""
-          />
-        </a>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center anim-hidden-left p-8 pb-14 lg:p-0">
+      <div className="flex flex-col lg:flex-row anim-hidden-left p-8 pb-14 lg:pl-20">
         <a
           href="#"
           className="project-card flex flex-col md:flex-row items-center my-5 border border-gray-700 rounded-lg shadow-md md:max-w-3xl"
         >
           <img
-            className="object-contain pt-2 md:pt-0 md:object-cover w-full rounded-t-lg h-48 md:h-auto md:w-60 md:rounded-none md:rounded-l-lg"
-            src={example}
+            className="object-contain pt-2 md:pt-0 md:object-cover w-full h-48 md:h-auto md:w-60 lg:rounded-l-lg"
+            src={waterTracker}
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Portfolio Project
+            <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-white">
+              Water Intake Tracking App
             </h5>
-            <p className="text-sm md:text-base pb-10 font-normal text-gray-700 dark:text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis cupiditate consectetur sequi reprehenderit labore
-              fugiat impedit at esse adipisci, unde tempore voluptatibus in id
-              obcaecati vero ab, dignissimos dolorum? Enim!
+            <p className="text-sm md:text-base pb-10 font-normal text-gray-300">
+            A machine learning-based web app that predicts the likelihood of a heart attack based on user inputs like age, gender, cholesterol, and blood pressure. Developed with Python, Flask, and scikit-learn, it can help users take proactive steps to prevent heart disease.
             </p>
             <form className="flex flex-col justify-center">
               <button
@@ -198,7 +190,7 @@ function Projects() {
           </div>
         </a>
         <form
-          className="flex flex-col justify-center px-20 md:max-w-3xl"
+          className="flex flex-col justify-center lg:px-10 md:max-w-3xl"
           action=""
         >
           <button
