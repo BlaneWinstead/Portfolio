@@ -68,7 +68,7 @@ function Navbar() {
             </li>
             <li className="text-white text-xl font-bold px-4 py-2">
               <a
-                href="https://drive.google.com/file/d/1_OzF9PZ4O3iZnPphj3jii3uWHgK7Z6mE/view?usp=sharing"
+                href="https://drive.google.com/file/d/1oVIpgVwyGx2G_yqw1qk8509S0vXoVBi2/view?usp=sharing"
                 target="_blank"
               >
                 Resume
